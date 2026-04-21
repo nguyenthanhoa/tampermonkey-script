@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Auto off connect block internet
+// @name         Auto off internet block connect
 // @namespace    http://tampermonkey.net/
 // @downloadURL  https://github.com/nguyenthanhoa/tampermonkey-script/blob/main/off-internet-block-msuite.user.js
 // @updateURL    https://github.com/nguyenthanhoa/tampermonkey-script/blob/main/off-internet-block-msuite.user.js
