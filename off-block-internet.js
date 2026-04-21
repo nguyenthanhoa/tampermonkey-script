@@ -48,9 +48,6 @@
         });
     }
 
-
-
-    // Chạy lần đầu
     //processElements();
     setInterval(processElements, 5000);
 })();
