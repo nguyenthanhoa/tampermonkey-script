@@ -30,6 +30,7 @@
                     const attrName = attrs[i].name;
                     // Kiểm tra prefix 'data-v-'
                     if (attrName.startsWith('data-v-')) { 
+                        console.log(attrName)
                         return attrName;
                     }
                 }
