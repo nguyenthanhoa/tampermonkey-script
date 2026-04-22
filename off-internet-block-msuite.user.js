@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Auto off internet block connect
 // @namespace    http://tampermonkey.net/
-// @downloadURL  https://github.com/nguyenthanhoa/tampermonkey-script/blob/main/off-internet-block-msuite.user.js
-// @updateURL    https://github.com/nguyenthanhoa/tampermonkey-script/blob/main/off-internet-block-msuite.user.js
+// @downloadURL  https://github.com/nguyenthanhoa/tampermonkey-script/raw/refs/heads/main/off-internet-block-msuite.user.js
+// @updateURL    https://github.com/nguyenthanhoa/tampermonkey-script/raw/refs/heads/main/off-internet-block-msuite.user.js
 // @version      2026-04-21
 // @description  try to take over the world!
 // @author       You
