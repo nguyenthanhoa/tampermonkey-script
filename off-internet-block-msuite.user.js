@@ -18,7 +18,7 @@
     const findDynamicAttribute = () => {
         // 1. Tìm tất cả các div có class chứa 'overflow-auto' (Parent Scope)
         const containers = document.querySelectorAll('div[class*="overflow-auto"]');
-        
+
         for (const container of containers) {
             // 2. Tìm các div con bên trong container này
             const childDivs = container.querySelectorAll('div');
