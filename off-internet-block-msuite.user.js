@@ -15,10 +15,34 @@
 (function() {
     'use strict';
     // 2. Hàm xử lý chính
-
+    const findDynamicAttribute = () => {
+        // 1. Tìm tất cả các div có class chứa 'overflow-auto' (Parent Scope)
+        const containers = document.querySelectorAll('div[class*="overflow-auto"]');
+        
+        for (const container of containers) {
+            // 2. Tìm các div con bên trong container này
+            const childDivs = container.querySelectorAll('div');
+            
+            for (const div of childDivs) {
+                // 3. Duyệt qua danh sách attributes của div con
+                const attrs = div.attributes;
+                for (let i = 0; i < attrs.length; i++) {
+                    const attrName = attrs[i].name;
+                    // Kiểm tra prefix 'data-v-'
+                    if (attrName.startsWith('data-v-')) {
+                        console.log(`[Senior Debug] Target Attribute Found: ${attrName} inside .overflow-auto`);
+                        return attrName;
+                    }
+                }
+            }
+        }
+        
+        // Trả về null hoặc giá trị mặc định nếu không tìm thấy
+        return null;
+    };
     function processElements() {
         // Tìm tất cả các div có attribute data-v-55b02123
-        const attr ='data-v-55b02123'
+        const attr =findDynamicAttribute()||'data-v-55b02123'
         const allPotentialParents = document.querySelectorAll(`div[${attr}].item-app`);
         if(!allPotentialParents)return;
         allPotentialParents.forEach(parent => {
