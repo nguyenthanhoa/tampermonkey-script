@@ -29,8 +29,7 @@
                 for (let i = 0; i < attrs.length; i++) {
                     const attrName = attrs[i].name;
                     // Kiểm tra prefix 'data-v-'
-                    if (attrName.startsWith('data-v-')) {
-                        console.log(`[Senior Debug] Target Attribute Found: ${attrName} inside .overflow-auto`);
+                    if (attrName.startsWith('data-v-')) { 
                         return attrName;
                     }
                 }
