@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @downloadURL  https://github.com/nguyenthanhoa/tampermonkey-script/raw/refs/heads/main/off-internet-block-msuite.user.js
 // @updateURL    https://github.com/nguyenthanhoa/tampermonkey-script/raw/refs/heads/main/off-internet-block-msuite.user.js
-// @version      3
+// @version      4
 // @description  try to take over the world!
 // @author       You
 // @match        https://localhost:40001/ui/main/connection
@@ -29,7 +29,8 @@
                 for (let i = 0; i < attrs.length; i++) {
                     const attrName = attrs[i].name;
                     // Kiểm tra prefix 'data-v-'
-                    if (attrName.startsWith('data-v-')) {  
+                    if (attrName.startsWith('data-v-')) { 
+                        console.log(`attribute: ${attrName}`)
                         return attrName;
                     }
                 }
@@ -41,8 +42,7 @@
     };
     var attr = null;
     function processElements() {
-        // Tìm tất cả các div có attribute data-v-55b02123
-        console.log(attr)
+        // Tìm tất cả các div có attribute data-v-*
        if(!attr) attr = findDynamicAttribute();
         const allPotentialParents = document.querySelectorAll(`div[${attr}].item-app`);
         if(!allPotentialParents)return;
