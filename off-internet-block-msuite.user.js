@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @downloadURL  https://github.com/nguyenthanhoa/tampermonkey-script/raw/refs/heads/main/off-internet-block-msuite.user.js
 // @updateURL    https://github.com/nguyenthanhoa/tampermonkey-script/raw/refs/heads/main/off-internet-block-msuite.user.js
-// @version      1
+// @version      2
 // @description  try to take over the world!
 // @author       You
 // @match        https://localhost:40001/ui/main/connection
