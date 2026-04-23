@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @downloadURL  https://github.com/nguyenthanhoa/tampermonkey-script/raw/refs/heads/main/off-internet-block-msuite.user.js
 // @updateURL    https://github.com/nguyenthanhoa/tampermonkey-script/raw/refs/heads/main/off-internet-block-msuite.user.js
-// @version      2026-04-21
+// @version      1
 // @description  try to take over the world!
 // @author       You
 // @match        https://localhost:40001/ui/main/connection
@@ -43,7 +43,7 @@
     const attr = null;
     function processElements() {
         // Tìm tất cả các div có attribute data-v-55b02123
-       if(!attr) attr =findDynamicAttribute();
+       if(!attr) attr = findDynamicAttribute();
         const allPotentialParents = document.querySelectorAll(`div[${attr}].item-app`);
         if(!allPotentialParents)return;
         allPotentialParents.forEach(parent => {
