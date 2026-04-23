@@ -43,6 +43,7 @@
     const attr = null;
     function processElements() {
         // Tìm tất cả các div có attribute data-v-55b02123
+        console.log(attrName)
        if(!attr) attr = findDynamicAttribute();
         const allPotentialParents = document.querySelectorAll(`div[${attr}].item-app`);
         if(!allPotentialParents)return;
