@@ -39,7 +39,7 @@
         // Trả về null hoặc giá trị mặc định nếu không tìm thấy
         return null;
     };
-    const attr = null;
+    var attr = null;
     function processElements() {
         // Tìm tất cả các div có attribute data-v-55b02123
         console.log(attr)
