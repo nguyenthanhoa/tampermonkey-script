@@ -6,7 +6,7 @@
 // @version      4
 // @description  try to take over the world!
 // @author       You
-// @match        https://localhost:40001/ui/main/connection
+// @match        https://localhost:40001/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=undefined.localhost
 // @grant        none
 // ==/UserScript==
